@@ -1,11 +1,14 @@
 import React from "react";
 import Banner from "../Banner/Banner";
+import ReputedClients from "../ReputedClients/ReputedClients";
+import Strength from "../Strength/Strength";
 
 const Homepage = () => {
   return (
     <div>
       <Banner></Banner>
-      <h2>this is homepage</h2>
+      <ReputedClients></ReputedClients>
+      <Strength></Strength>
     </div>
   );
 };

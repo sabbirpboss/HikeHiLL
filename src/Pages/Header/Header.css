@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    position: fixed;
+    position: sticky;
     z-index: 999;
     top: 0;
     height: 100px;
