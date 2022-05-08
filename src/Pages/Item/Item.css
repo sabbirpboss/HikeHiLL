@@ -1,0 +1,25 @@
+.item-card{
+    width: 350px;
+    height: 500px;
+    border: 2px solid violet;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+.item-card img{
+    width: 335px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -4px;
+    margin-left: -5px;
+    margin-bottom: 15px;
+    max-height: 175px;
+}
+.update-btn{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    margin-top: 50px;
+}
