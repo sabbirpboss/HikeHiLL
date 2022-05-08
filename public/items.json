@@ -1,0 +1,83 @@
+[
+    {
+      "id": "01",
+      "name": "Altra Lone Peak 6",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/lone-peak-6-420x206.jpeg",
+      "description": "For most people, the Altra Lone Peak is a solid choice that will leave your feet feeling great at the end of any hike. The feel is cushy and light, and if it had a car equivalent, this would be a Cadillac or Mercedes Sedan."
+    },
+    {
+      "id": "02",
+      "name": "Gregory Zulu 30",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/gregory-zulu-30-420x552.jpeg",
+      "description": "After testing quite a few backpacks, the Gregory Zulu 30 (and Jade 28 for women) is, for most hikers, the best all-season day-pack. First off, it's very comfortable, and the mesh “trampoline” back keeps your back dry."
+    },
+    {
+      "id": "03",
+      "name": "Altra Lone Peak 6",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/lone-peak-6-yellow-420x199.jpeg",
+      "description": "For most people, the Altra Lone Peak is a solid choice that will leave your feet feeling great at the end of any hike. The feel is cushy and light, and if it had a car equivalent, this would be a Cadillac or Mercedes Sedan."
+    },
+    {
+      "id": "04",
+      "name": "Garmin GPSMAP 66",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/gpsmap-66i-420x355.jpg",
+      "description": "Why get a dedicated GPS unit? The interface might not be as slick as a new smartphone, but a GPS like this is built for the outdoors, works in heavy rain, and with gloves on. You can also get more granular control over your track recording and navigation."
+    },
+    {
+      "id": "05",
+      "name": "Garmin Epix",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/garmin-epix-420x476.jpeg",
+      "description": "Another option for a dedicated GPS is to have a mapping smartwatch. They're not cheap, but they include topographic maps, an accurate GPS, altimeter, and compass. The watch is also a fitness tracker, sleep tracker, can load other apps, etc."
+    },
+    {
+      "id": "06",
+      "name": "Garmin InReach Mini 2",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/garmin-epix-420x476.jpeg",
+      "description": "I'm a firm believer in carrying a satellite communications device which works where cell phones don't. I use a Garmin InReach which lets me send text messages back and forth to my family to let them know that I'm okay or if my plans change when I'm out in the backcountry."
+    },
+    {
+      "id": "07",
+      "name": "Jade 28",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/lone-peak-6-yellow-420x199.jpeg",
+      "description": "After testing quite a few backpacks, the Gregory Zulu 30 (and Jade 28 for women) is, for most hikers, the best all-season day-pack. First off, it's very comfortable, and the mesh “trampoline” back keeps your back dry."
+    },
+    {
+      "id": "08",
+      "name": "Garmin InReach Mini 2",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/lone-peak-6-420x206.jpeg",
+      "description": "I'm a firm believer in carrying a satellite communications device which works where cell phones don't. I use a Garmin InReach which lets me send text messages back and forth to my family to let them know that I'm okay or if my plans change when I'm out in the backcountry."
+    },
+    {
+      "id": "09",
+      "name": "Garmin Epix",
+      "price": "4500",
+      "quantity": "33",
+      "supplier": "Sobuz Hasan",
+      "image": "https://hikingguy.com/wp-content/uploads/lone-peak-6-yellow-420x199.jpeg",
+      "description": "Another option for a dedicated GPS is to have a mapping smartwatch. They're not cheap, but they include topographic maps, an accurate GPS, altimeter, and compass. The watch is also a fitness tracker, sleep tracker, can load other apps, etc."
+    }
+  ]
