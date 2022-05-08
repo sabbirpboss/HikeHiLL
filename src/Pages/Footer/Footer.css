@@ -1,0 +1,16 @@
+.footer-section{
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+}
+
+.about p{
+    text-align: justify;
+}
+.copyright a{
+    color: white;
+    transition: 0.3s;
+}
+.copyright a:hover{
+    color: violet;
+}

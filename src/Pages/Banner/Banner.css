@@ -1,0 +1,14 @@
+.banner{
+    position: relative;
+}
+.banner img{
+    height: 700px;
+}
+.banner h1{
+position: absolute;
+bottom: 350px;
+}
+.banner h4{
+    position: absolute;
+    bottom: 300px;
+}
