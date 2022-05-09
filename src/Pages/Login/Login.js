@@ -29,7 +29,7 @@ const Login = () => {
   }
 
   if (error) {
-    errorElement = <p className="text-danger">Error: {error?.message}</p>;
+    errorElement = <p className="text-danger">{error?.message}</p>;
   }
 
   const [signInWithGoogle] = useSignInWithGoogle(auth);

@@ -20,7 +20,9 @@ const Header = () => {
       </Link>
       <div>
         <Link to="/home">Home</Link>
-        <Link to="/inventory">Inventory</Link>
+        <Link to="/inventory">Inventory</Link> 
+        <Link to="/manage">Manage Inventory</Link> 
+        <Link to="/blogs">Blogs</Link>
         <Link to="/about">About Us</Link>
 
         <span className="login-signup">

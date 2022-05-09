@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Item.css";
 
 const Item = ({ item }) => {
-  const { name, image, price, quantity, supplier, description } = item;
+  const {_id, name, image, price, quantity, supplier, description } = item;
+
+  const navigate = useNavigate()
 
   return (
     <div className="item-card">
@@ -15,7 +18,7 @@ const Item = ({ item }) => {
       <h6>Supplier: {supplier}</h6>
       <p className="description">{description.slice(0, 75)}...</p>
       <div className="update-btn">
-          <button className="btn btn-info w-100">Update</button>
+          <button onClick={() => navigate(`/inventory/${_id}`)} className="btn btn-info w-100">Update</button>
       </div>
     </div>
   );

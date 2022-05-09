@@ -5,9 +5,17 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const RequireAuth = ({ children }) => {
-    const [user] = useAuthState(auth);
+
+
+
+    const [user, loading, error] = useAuthState(auth);
     const location = useLocation();
     const [sendEmailVerification] = useSendEmailVerification(auth);
+
+
+    if(loading){
+        return <p>loading...</p>
+    }
 
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
@@ -18,7 +26,7 @@ const RequireAuth = ({ children }) => {
             <h3 className='text-danger'>Your Email is not verified!!</h3>
             <h5 className='text-success'> Please Verify your email address</h5>
             <button
-            className='btn btn-primary'
+            className='btn btn-primary mb-5'
                 onClick={async () => {
                     await sendEmailVerification();
                     toast('Sent email');
