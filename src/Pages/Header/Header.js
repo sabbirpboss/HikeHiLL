@@ -20,11 +20,12 @@ const Header = () => {
       </Link>
       <div>
         <Link to="/home">Home</Link>
-        <Link to="/inventory">Inventory</Link> 
-        <Link to="/manage">Manage Inventory</Link> 
+        <Link to="/inventory">Inventory</Link>
+        {user?<Link to="/manage">Manage Inventory</Link>: ""}
+        {user?<Link to="/myitem">My Item</Link>: ""}
+        {user?<Link to="/additem">Add New Item</Link>: ""}
         <Link to="/blogs">Blogs</Link>
         <Link to="/about">About Us</Link>
-
         <span className="login-signup">
           {!user ? (
             <Link to="/login">Login</Link>
@@ -33,11 +34,7 @@ const Header = () => {
               SignOut
             </button>
           )}
-          {!user ? (
-            <Link to="/signup">SignUp</Link>
-          ) : (
-            <></>
-          )}
+          {!user ? <Link to="/signup">SignUp</Link> : <></>}
         </span>
       </div>
     </div>

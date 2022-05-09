@@ -10,8 +10,8 @@ const AddNewItem = () => {
 
         e.preventDefault();
 
-        const name = e.target.Name.value;
-        const supplier = e.target.suppliername.value;
+        const name = e.target.name.value;
+        const supplier = e.target.supplier.value;
         const price = e.target.price.value;
         const quantity = e.target.quantity.value;
         const description = e.target.description.value;
@@ -20,8 +20,8 @@ const AddNewItem = () => {
 
         const items = { name, supplier, price, quantity, description, image, userEmail };
 
-        fetch(`http://localhost:5000/item`, {
-            method: 'POST',
+        fetch('http://localhost:5000/product',{
+            method: "POST",
             headers: {
                 'Content-type': 'application/json',
             },
@@ -33,39 +33,44 @@ const AddNewItem = () => {
         e.target.reset();
         toast.success('Item Added');
     }
-
+    
     return (
         <div className='container my-5'>
             <h2>Add A New Item</h2>
       <form className="d-flex flex-column" onSubmit={handlePostItem}>
         <input
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Name"
-          type="text"
+          placeholder="Item Name"
+          name='name'
         />
         <textarea
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Description"
+          placeholder="Item Description"
+          name='description'
         />
         <input
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Price"
+          placeholder="Item Price"
           type="number"
+          name='price'
         />
         <input
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Supplier"
+          placeholder="Item Supplier Name"
           type="text"
+          name='supplier'
         />
         <input
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Quantity"
+          placeholder="Item Quantity"
           type="number"
+          name='quantity'
         />
         <input
           className="mb-2 rounded p-2 border-1 border-info"
-          placeholder="Photo URL"
+          placeholder="Item Photo URL"
           type="text"
+          name='image'
         />
         <input className='text-white fs-5 fw-bold rounded p-2 border-0 bg-info' type="submit" value="Add Service" />
       </form>
