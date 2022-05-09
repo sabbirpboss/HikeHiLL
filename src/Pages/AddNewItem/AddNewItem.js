@@ -1,9 +1,11 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
+import auth from '../../firebase.init';
 
 const AddNewItem = () => {
 
+    const [user] = useAuthState(auth);
     const handlePostItem = (e) => {
 
         e.preventDefault();
@@ -39,6 +41,7 @@ const AddNewItem = () => {
         <input
           className="mb-2 rounded p-2 border-1 border-info"
           placeholder="Name"
+          type="text"
         />
         <textarea
           className="mb-2 rounded p-2 border-1 border-info"
@@ -52,7 +55,7 @@ const AddNewItem = () => {
         <input
           className="mb-2 rounded p-2 border-1 border-info"
           placeholder="Supplier"
-          type="number"
+          type="text"
         />
         <input
           className="mb-2 rounded p-2 border-1 border-info"
