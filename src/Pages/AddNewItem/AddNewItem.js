@@ -27,7 +27,7 @@ const AddNewItem = () => {
       userEmail,
     };
 
-    fetch("http://localhost:5000/product", {
+    fetch("https://hikehill-server-a11.herokuapp.com/product", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

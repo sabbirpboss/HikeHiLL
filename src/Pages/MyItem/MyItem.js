@@ -12,7 +12,7 @@ const MyItem = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const url = `http://localhost:5000/myitem?email=${user?.email}`;
+    const url = `https://hikehill-server-a11.herokuapp.com/myitem?email=${user?.email}`;
     console.log(url);
     fetch(url, {
       headers: {
