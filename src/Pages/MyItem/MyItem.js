@@ -1,5 +1,6 @@
 import { signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
+import './MyItem.css';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -38,9 +39,11 @@ const MyItem = () => {
   }, [navigate, user]);
 
   return (
-    <div className="my-5">
-      <h2>This is my item lists</h2>
-      {items.length?
+    <div className="container my-5">
+      <h2 className="text-info">This is my item lists</h2>
+      <div className="custom-align">
+      {
+      items.length?
       items.map((item) => (
         <>
           <div className="item-card">
@@ -58,6 +61,7 @@ const MyItem = () => {
       :
       <Loading></Loading>
       }
+      </div>
     </div>
   );
 };
