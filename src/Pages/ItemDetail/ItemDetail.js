@@ -85,17 +85,41 @@ const ItemDetail = () => {
   };
 
   return (
-    <div className="mt-5 mb-5">
-      <h2>Welcome to single item by id: {product.name}</h2>
-      <h4>{product.price}</h4>
-      <h3>{product.quantity}</h3>
-      <div>
-        <form onSubmit={handleAddMore}>
-          <input type="number" name="number" placeholder="Add More" />
+    <div className="container mt-5 mb-5">
+      <h2 className="mb-4">Product Name: <span className="text-success">{product.name}</span></h2>
+      <div className="row">
+        <div className="col-md-6 border border-info p-2 rounded">
+          <div>
+            <img
+              className="w-75 border p-2 rounded border-0 mb-3"
+              src={product.image}
+              alt=""
+            />
+          </div>
+          <h2>Price: {product.price}</h2>
+          <h3>Quantity: {product.quantity}</h3>
+          <h5>Supplier: {product.supplier}</h5>
+          <p>Description: {product.description}</p>
+        </div>
+        <div className="col-md-6">
+          <p className="text-success"><small>Do You Want Add More This Item?</small></p>
+          <form onSubmit={handleAddMore}>
+            <input type="number" name="number" placeholder="Add More" />
+            <br />
+            <input
+              className="btn btn-success mt-2"
+              type="submit"
+              value="ADD MORE"
+            />
+          </form>
           <br />
-          <input className="btn btn-info" type="submit" value="ADD MORE" />
-        </form>
-        <button onClick={handleDecrease} className="btn-warning">Decrease</button>
+          <button
+            onClick={handleDecrease}
+            className="btn-danger rounded p-2 border-0"
+          >
+            Decrease
+          </button>
+        </div>
       </div>
     </div>
   );
