@@ -9,7 +9,7 @@ const ManageItem = ({ item, setRefresh }) => {
     const proceed = window.confirm("Are you Sure?");
 
     if (proceed) {
-      fetch(`http://localhost:5000/item/${id}`, {
+      fetch(`https://hikehill-server-a11.herokuapp.com/item/${id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())
