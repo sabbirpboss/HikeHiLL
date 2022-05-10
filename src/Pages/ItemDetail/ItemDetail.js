@@ -10,7 +10,7 @@ const ItemDetail = () => {
   //   console.log(id);
 
   useEffect(() => {
-    fetch(`https://hikehill-server-a11.herokuapp.com/item/${id}`)
+    fetch(`http://localhost:5000/item/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [refresh, id]);
@@ -35,7 +35,7 @@ const ItemDetail = () => {
       image,
     };
 
-    fetch(`https://hikehill-server-a11.herokuapp.com/item/${id}`, {
+    fetch(`http://localhost:5000/item/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
@@ -69,7 +69,7 @@ const ItemDetail = () => {
       image,
     };
 
-    fetch(`https://hikehill-server-a11.herokuapp.com/item/${id}`, {
+    fetch(`http://localhost:5000/item/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

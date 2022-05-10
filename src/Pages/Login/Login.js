@@ -21,18 +21,30 @@ const Login = () => {
   let errorElement;
   const [signInWithEmailAndPassword, user, error] =
     useSignInWithEmailAndPassword(auth);
-
+  const [signInWithGoogle, userOne, errorOne] = useSignInWithGoogle(auth);
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
-  if (user) {
-    navigate(from, { replace: true });
+  if (user || userOne) {
+    fetch("https://auto-shoroom.herokuapp.com/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email: user?.user?.email || userOne?.user?.email,
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        localStorage.setItem("accessToken", data?.token);
+        toast.success("Welcome To HikeHill");
+        // navigate(from, { replace: true });
+      });
   }
 
-  if (error) {
-    errorElement = <p className="text-danger">{error?.message}</p>;
+  if (error || errorOne) {
+    errorElement = <p className="text-danger">{error?.message || errorOne?.message}</p>;
   }
-
-  const [signInWithGoogle] = useSignInWithGoogle(auth);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -55,6 +67,7 @@ const Login = () => {
       toast("please enter your email address");
     }
   };
+
   return (
     <div className="w-25 mx-auto my-5 rounded-3 d-flex justify-content-center align-items-center border border-info border-2">
       <div>
@@ -69,7 +82,10 @@ const Login = () => {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3 input-group" controlId="formBasicPassword">
+          <Form.Group
+            className="mb-3 input-group"
+            controlId="formBasicPassword"
+          >
             <Form.Control
               ref={passwordRef}
               type="password"

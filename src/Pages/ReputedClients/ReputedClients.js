@@ -15,7 +15,7 @@ import "./ReputedClients.css";
 
 const ReputedClients = () => {
   return (
-    <div className="mt-5 mb-5">
+    <div className="my-5">
       <div className="w-50 mx-auto">
         <h2>
           Some Of Our
