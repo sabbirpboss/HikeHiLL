@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useItems from "../../Hooks/useItems";
 import Banner from "../Banner/Banner";
 import Item from "../Item/Item";
+import Loading from "../Loading/Loading";
 import ReputedClients from "../ReputedClients/ReputedClients";
 import Strength from "../Strength/Strength";
 
@@ -10,7 +11,13 @@ const Homepage = () => {
   const [items, setItems] = useItems();
   return (
     <div>
-      <Banner></Banner>
+      {
+        items.length?
+        <Banner></Banner>
+        :
+        <Loading></Loading>
+      }
+      
       <div className="mt-5 mb-5">
         <h2 className="mb-4">Our Gear's</h2>
         <div className="container gears-container">
