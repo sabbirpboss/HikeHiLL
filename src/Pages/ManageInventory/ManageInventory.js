@@ -13,8 +13,8 @@ const ManageInventory = () => {
   }, [refresh]);
 
   return (
-    <div>
-      <h2 className="mb-4">Inventory: Our Gear's</h2>
+    <div className="my-5">
+      <h2 className="my-4">Manage All Items</h2>
       <Link to="/additem">
       <button className="btn-info p-2 my-4 rounded border border-warning fw-bold text-white fs-5">Add New Item</button>
       </Link>
