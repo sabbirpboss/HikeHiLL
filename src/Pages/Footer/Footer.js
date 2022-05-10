@@ -1,6 +1,6 @@
 import React from "react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="col-md-4 contact">
           <h2>Contact</h2>
           <div>
-            <p>123, Lorem Ipsum, Dummy City, FL-12345 USA</p>
+            <p>123, New York/ California, FL-12345 USA</p>
             <p>+(1) 123-878-1649 | +(1) 123-878-1649</p>
           </div>
         </div>
